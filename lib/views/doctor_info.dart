@@ -19,55 +19,116 @@ class _DoctorsInfoState extends State<DoctorsInfo> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Row(
                 children: <Widget>[
                   Image.asset("assets/doctor_pic2.png", height: 220),
-                  SizedBox(
-                    width: 20,
-                  ),
+                /*  SizedBox(
+                    width: 15,
+                  ),*/
                   Container(
-                    width: MediaQuery.of(context).size.width - 222,
-                    height: 220,
+                    height: 230,
+                    width: 190,
+
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text(
-                          "Dr. Stefeni Albert",
-                          style: TextStyle(fontSize: 32),
+                        Container(
+                          width: MediaQuery.of(context).size.width - 222,
+                          height: 180,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Dr. Stefeni Albert",
+                                style: TextStyle(fontSize: 32),
+                              ),
+                              Text(
+                                "Heart Speailist",
+                                style: TextStyle(fontSize: 19, color: Colors.grey),
+                              ),
+                              SizedBox(
+                                height: 7,
+                              ),
+                            ],
+                          ),
                         ),
-                        Text(
-                          "Heart Speailist",
-                          style: TextStyle(fontSize: 19, color: Colors.grey),
-                        ),
-                        SizedBox(
-                          height: 40,
-                        ),
-                        Row(
-                          children: <Widget>[
-                            IconTile(
-                              backColor: Color(0xffFFECDD),
-                              imgAssetPath: "assets/email.png",
-                            ),
-                            IconTile(
-                              backColor: Color(0xffFEF2F0),
-                              imgAssetPath: "assets/call.png",
-                            ),
-                            IconTile(
-                              backColor: Color(0xffEBECEF),
-                              imgAssetPath: "assets/video_call.png",
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(left:7.0),
+                          child: Row(
+
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              IconTile(
+                                backColor: Color(0xffFFECDD),
+                                imgAssetPath: "assets/email.png",
+                              ),
+
+                                IconTile(
+                                backColor: Color(0xffEBECEF),
+                                imgAssetPath: "assets/video_call.png",
+                              ),
+                              IconTile(
+                                backColor: Color(0xffFEF2F0),
+                                imgAssetPath: "assets/call.png",
+                              ),
+                            ],
+                          ),
                         )
+
+
+
                       ],
                     ),
                   ),
+
+
                 ],
               ),
+
+/*Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Dr. Stefeni Albert",
+                            style: TextStyle(fontSize: 32),
+                          ),
+                          Text(
+                            "Heart Speailist",
+                            style: TextStyle(fontSize: 19, color: Colors.grey),
+                          ),
+                          SizedBox(
+                            height: 40,
+                          ),
+
+
+                        ],
+                      ),*/
+
+              /*     Expanded(
+                          child: Row(
+                            children: <Widget>[
+                              IconTile(
+                                backColor: Color(0xffFFECDD),
+                                imgAssetPath: "assets/email.png",
+                              ),
+                              IconTile(
+                                backColor: Color(0xffFEF2F0),
+                                imgAssetPath: "assets/call.png",
+                              ),
+                              IconTile(
+                                backColor: Color(0xffEBECEF),
+                                imgAssetPath: "assets/video_call.png",
+                              ),
+                            ],
+                          ),
+                        ),*/
+
+
               SizedBox(
                 height: 26,
               ),
@@ -90,8 +151,20 @@ class _DoctorsInfoState extends State<DoctorsInfo> {
                   Column(
                     children: <Widget>[
                       Row(
+                       // crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Image.asset("assets/mappin.png"),
+                     /*     Container(
+                            height: 20,
+                            width: 20,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image:AssetImage("assets/mappin.png"),
+                                fit: BoxFit.cover
+                              )
+                            ),
+                          ),
+*/
                           SizedBox(
                             width: 20,
                           ),
